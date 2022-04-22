@@ -10,10 +10,9 @@
           border-b border-solid border-brand-gray-1
         "
       >
-        <a href="/" class="flex items-center h-full text-xl">{{ company }}</a>
-        <h2 class="flex items-center h-full ml-8">
-          Develop by {{ author.firstName }} {{ author.lastName }}
-        </h2>
+        <a :href="url" class="flex items-center h-full text-xl">{{
+          company
+        }}</a>
       </div>
     </div>
   </header>
@@ -25,10 +24,7 @@ export default {
   data() {
     return {
       company: "Elocin Careers",
-      author: {
-        firstName: "Carlos",
-        lastName: "Orue",
-      },
+      url: "https://careers.google.com",
     };
   },
 };
